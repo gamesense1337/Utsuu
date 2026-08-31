@@ -4,14 +4,14 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-2ea44f)](https://crystal-lang.org/install/)
 [![License](https://img.shields.io/badge/License-MIT-238636)](LICENSE)
 
-Utsuu is a compact, self-hosted image host written in Crystal. It runs a small HTTP server with a simple upload page, stores accepted images locally, and returns a direct UUID-based URL for each upload.
+Utsuu is a compact, self hosted image host written in Crystal. It runs a small HTTP server with a simple upload page, stores accepted images locally, and returns a direct UUID based URL for each upload.
 
 It is intentionally lightweight and easy to extend. The project does not provide public hosting, user accounts, persistent cloud storage, or production security controls by default.
 
 ## Features
 
 - Supports **PNG**, **JPG**, **GIF**, and **WEBP** uploads.
-- Enforces a **10 MB** server-side upload limit.
+- Enforces a **10 MB** server side upload limit.
 - Generates a unique UUID filename for every accepted upload.
 - Returns direct image URLs through both the upload page and the JSON API.
 - Serves uploaded images with the appropriate MIME type and cache headers.
@@ -24,7 +24,7 @@ Utsuu listens on port `3000` and exposes two routes:
 
 1. `GET /` renders the upload page.
 2. `POST /upload` accepts a multipart form containing a `file` field, validates the extension and size, then writes the image to `images/` with a UUID filename.
-3. `GET /images/<UUID>.<extension>` serves the stored image and applies a one-week cache policy.
+3. `GET /images/<UUID>.<extension>` serves the stored image and applies a one week cache policy.
 
 Successful uploads return JSON in this format:
 
@@ -101,7 +101,7 @@ For a public image host, place the application behind Caddy, nginx, or another H
 
 ## Disclaimer
 
-Utsuu is provided as a self-hosted code example. The user deploying it is responsible for their infrastructure, uploaded content, access controls, and any security measures required for their use case.
+Utsuu is provided as a self hosted code example. The user deploying it is responsible for their infrastructure, uploaded content, access controls, and any security measures required for their use case.
 
 ## License
 
