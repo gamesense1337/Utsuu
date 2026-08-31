@@ -78,18 +78,7 @@ The project has no external dependencies, so `shards build` is enough for a rele
 crystal run src/Main.cr
 ```
 
-The resulting executable is written to `bin/Utsuu` on Linux/macOS or `bin\Utsuu.exe` on Windows.
-
-## Project Layout
-
-```text
-Utsuu/
-├── src/Main.cr      # HTTP server, upload handler, image serving, and web UI
-├── images/          # Created automatically; uploaded images are excluded from Git
-├── shard.yml        # Crystal project definition
-├── README.md
-└── LICENSE
-```
+The resulting executable is written to `bin/Utsuu` on Linux/macOS or `bin\UtsuuImageHost.exe` on Windows.
 
 ## Public Deployment
 
