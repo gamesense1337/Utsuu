@@ -1,5 +1,6 @@
 # Utsuu
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=gamesense1337.Utsuu)
 [![Crystal](https://img.shields.io/badge/Crystal-1.12%2B-black?logo=crystal)](https://crystal-lang.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-2ea44f)](https://crystal-lang.org/install/)
 [![License](https://img.shields.io/badge/License-MIT-238636)](LICENSE)
